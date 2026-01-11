@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tile Marker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <h3>Tile Calibrator</h3>
+        <p>Align the red box with the tile next to you.</p>
+        
+        <label>Tile Width (px): <span id="val-w">50</span></label>
+        <input type="range" id="tile-width" min="20" max="150" value="50">
+        
+        <label>Tile Height (px): <span id="val-h">50</span></label>
+        <input type="range" id="tile-height" min="10" max="100" value="35">
+
+        <button id="toggle-overlay">Toggle Guides</button>
+        <p class="small">Press 'Toggle Guides' to hide this menu and show only markers.</p>
+    </div>
+
+    <canvas id="overlayCanvas"></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>
